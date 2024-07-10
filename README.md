@@ -75,7 +75,7 @@ Almost every input parameters can either be hex `string` or `Object` in group. I
 
   $sk_A \in F_r$, $pk_A=g^{sk_A} \in G_1$
 
-  $sk_B \in F_r$, ​$pk_B=h^{sk_B} \in G_2$
+  $sk_B \in F_r$, $pk_A=g^{sk_A} \in G_1$, $pk_B=h^{sk_B} \in G_2$, ​$pk_B=h^{sk_B} \in G_2$
 
 - **Encryption**
   $C_1=((pk_A)^k,mZ^k)$
