@@ -78,21 +78,15 @@ Almost every input parameters can either be hex `string` or `Object` in group. I
   $sk_B \in F_r$, ​$pk_B=h^{sk_B} \in G_2$
 
 - **Encryption**
-  $$
-  C_1=((pk_A)^k,mZ^k)
-  $$
+  $C_1=((pk_A)^k,mZ^k)$
 
 - **Decryption**
 
-  $$
-  \frac{\beta}{e(\alpha,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((pk_A)^k,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((g^{sk_A})^k,h)^{\frac{1}{sk_A}}}=m
-  $$
+  $\frac{\beta}{e(\alpha,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((pk_A)^k,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((g^{sk_A})^k,h)^{\frac{1}{sk_A}}}=m$
 
 - **Re-Encryption Key Generation**
 
-  $$
-  rk_{A \to B}=(pk_B)^{\frac{1}{sk_A}}
-  $$
+  $rk_{A \to B}=(pk_B)^{\frac{1}{sk_A}}$
 
 - **Re-Encryption**
 
@@ -104,18 +98,12 @@ Almost every input parameters can either be hex `string` or `Object` in group. I
 
 - **Re-Decryption**
 
-  $$
-  \frac{\beta}{(\alpha^{'})^{\frac{1}{sk_B}}}=\frac{me(g,h)^k}{e(\alpha,rk_{P \to D}))^{\frac{1}{sk_B}}}=\frac{me(g,h)^k}{e((pk_A)^k,(pk_B)^{\frac{1}{sk_A}})^{\frac{1}{sk_B}}}=\frac{me(g,h)^k}{e((g^{sk_A})^k,(h^{sk_B})^{\frac{1}{sk_A}})^{\frac{1}{sk_B}}}=m
-  $$
+  $\frac{\beta}{(\alpha^{'})^{\frac{1}{sk_B}}}=\frac{me(g,h)^k}{e(\alpha,rk_{P \to D}))^{\frac{1}{sk_B}}}=\frac{me(g,h)^k}{e((pk_A)^k,(pk_B)^{\frac{1}{sk_A}})^{\frac{1}{sk_B}}}=\frac{me(g,h)^k}{e((g^{sk_A})^k,(h^{sk_B})^{\frac{1}{sk_A}})^{\frac{1}{sk_B}}}=m$
 
 - **Sign**
 
-  $$
-  S=H^{sk_A}
-  $$
+  $S=H^{sk_A}$
 
 - **Verify**
 
-  $$
-  e(g,S)=e(g,H^{sk_A})=e(g^{sk_A},H)=e(pk_A,H)
-  $$
+  $e(g,S)=e(g,H^{sk_A})=e(g^{sk_A},H)=e(pk_A,H)$
