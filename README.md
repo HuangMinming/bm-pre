@@ -82,7 +82,7 @@ Almost every input parameters can either be hex `string` or `Object` in group. I
 
 - **Decryption**
 
-  $\frac{\beta}{e(\alpha,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((pk_A)^k,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((g^{sk_A})^k,h)^{\frac{1}{sk_A}}}=m$
+  $\frac{\beta}{e(\alpha,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((pk_A)^k,h)^{\frac{1}{sk_A}}}=\frac{me(g,h)^k}{e((g^{sk_A})^k,h)^{\frac{1}{sk_A}}}=\frac{mZ^k}{e((g^{sk_A})^k,h)^{\frac{1}{sk_A}}}=m$
 
 - **Re-Encryption Key Generation**
 
